@@ -1,6 +1,6 @@
 {
   "name": "upyun",
-  "description": "Node.js module for upyun.com APIs.",
+  "description": "Node.js module for upyun.com REST APIs.",
   "version": "0.0.1",
   "author": {
     "name": "James Chen",
