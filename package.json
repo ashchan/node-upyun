@@ -2,40 +2,35 @@
   "name": "upyun",
   "description": "Node.js module for upyun.com REST APIs.",
   "version": "0.0.1",
-  "author": {
-    "name": "James Chen",
-    "email": "ashchan@gmail.com",
-    "url": "http://ashchan.com/"
-  },
+  "author": "James Chen <ashchan@gmail.com> (http://ashchan.com/)",
   "homepage": "https://github.com/ashchan/node-upyun",
-  "contributors": [],
+  "contributors": [
+    "James Chen <ashchan@gmail.com> (http://ashchan.com/)"
+  ],
   "devDependencies": {
     "tap": ">= 0.2.0"
   },
   "dependencies": {
   },
-  "main": "./lib/upyun.js",
+  "main": "lib/upyun.js",
   "directories": {
     "lib": "lib"
   },
-  "engines": {
-    "node": ">= 0.6.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ashchan/node-upyun.git"
-  },
+  "repository": "git://github.com/ashchan/node-upyun.git",
   "bugs": {
     "url": "https://github.com/ashchan/node-upyun/issues",
     "mail": "ashchan@gmail.com"
   },
-  "licenses": [{
+  "license": {
      "type": "MIT",
      "url": "https://github.com/ashchan/node-upyun"
-  }],
+  },
   "keywords": [
     "api", "upyun", "cloud"
   ],
+  "engines": {
+    "node": ">= 0.6.0"
+  },
   "scripts" : {
     "test" : "tap test/"
   }

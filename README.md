@@ -1,5 +1,17 @@
 Node.js module for upyun.com REST APIs.
 
+## Install
+
+    npm install upyun
+
+## Usage
+
+    Todo
+
+## Run Tests
+
+    npm test
+
 ## LICENSE
 
 (The MIT License)
