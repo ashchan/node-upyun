@@ -14,7 +14,7 @@ All the following APIs are to be fully provided:
     * create folder
     * delete folder
     * list files
-    * get bucket stats
+    * get bucket stats (usages)
 
 ## Usage
 
