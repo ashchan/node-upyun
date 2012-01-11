@@ -1,4 +1,4 @@
-Node.js module for upyun.com REST APIs.
+Node.js module for upyun.com ([又拍云存储](https://www.upyun.com/) REST APIs.
 
 ## APIs Coverage
 
