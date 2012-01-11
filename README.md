@@ -50,6 +50,12 @@ or simply upload the file, with the folder created automatically:
 
     client.uploadFile("docs/readme.txt", "gently down the stream", function(err, status, data){});
 
+## Download a file (get file content)
+
+    client.downloadFile("docs/readme.txt", function(err, status, data) {
+      // data fetched as file content
+    });
+
 ### Delete a file
 
     client.deleteFile("file.pdf", function(err, status, data) {});
@@ -80,8 +86,6 @@ To list files under root (bucket), pass null in as the first parameter:
       console.log("bucket space used: " + data);
     });
 
-upyun.com provides two auth methods: HTTP Basic Auth and Sign Auth. For the time being, node-upyun supports Sign Auth only.
-
 ## Run Tests
 
     BUCKET=yourtestbucket USER=yourusername PASSWORD=yourpassword npm test
@@ -89,6 +93,8 @@ upyun.com provides two auth methods: HTTP Basic Auth and Sign Auth. For the time
 yourtestbucket should exist. It's better to create a test only bucket for this.
 
 ## Todo
+
+upyun.com provides two auth methods: HTTP Basic Auth and Sign Auth. For the time being, node-upyun supports Sign Auth only.
 
     * support HTTP Basic Auth
 
