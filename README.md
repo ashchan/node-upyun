@@ -28,6 +28,10 @@ All the following APIs are to be fully provided:
 
 yourtestbucket should exist. It's better to create a test only bucket for this.
 
+## Todo
+
+    * support HTTP Basic Auth
+
 ## LICENSE
 
 (The MIT License)

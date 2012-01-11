@@ -44,9 +44,9 @@ test("delete a file", function(t) {
 test("chinese character", function(t) {
   t.plan(2);
   client.uploadFile("你好.txt", "test 中文", function(err, status, data) {
-    t.equal(status, 200, "file should be uploaded");
+    t.equal(status, 200, "file with chinese name should be uploaded");
     client.deleteFile("你好.txt", function(err, status, data) {
-      t.equal(status, 200, "file should be deleted");
+      t.equal(status, 200, "file with chinese name should be deleted");
     });
   });
 });
