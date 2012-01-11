@@ -50,7 +50,7 @@ or simply upload the file, with the folder created automatically:
 
     client.uploadFile("docs/readme.txt", "gently down the stream", function(err, status, data){});
 
-## Download a file (get file content)
+### Download a file (get file content)
 
     client.downloadFile("docs/readme.txt", function(err, status, data) {
       // data fetched as file content
