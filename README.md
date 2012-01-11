@@ -4,13 +4,29 @@ Node.js module for upyun.com REST APIs.
 
     npm install upyun
 
+## APIs Coverage
+
+All the following APIs are to be fully provided:
+
+    * upload file
+    * download file
+    * delete file
+    * create folder
+    * delete folder
+    * list files
+    * get bucket stats
+
 ## Usage
 
     Todo
 
+  upyun.com provides two auth methods: HTTP Basic Auth and Sign Auth. For the time being, node-upyun supports Sign Auth only.
+
 ## Run Tests
 
-    npm test
+    BUCKET=yourtestbucket USER=yourusername PASSWORD=yourpassword npm test
+
+yourtestbucket should exist. It's better to create a test only bucket for this.
 
 ## LICENSE
 
