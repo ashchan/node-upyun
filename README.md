@@ -96,6 +96,7 @@ yourtestbucket should exist. It's better to create a test only bucket for this.
 
 upyun.com provides two auth methods: HTTP Basic Auth and Sign Auth. For the time being, node-upyun supports Sign Auth only.
 
+    * fix chinese file path issue
     * support HTTP Basic Auth
 
 ## LICENSE
