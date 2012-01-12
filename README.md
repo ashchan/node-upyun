@@ -102,14 +102,12 @@ NOTE: yourtestbucket should exist and be empty. It's better to create a test onl
 ## Known Issues
 
     * none-ascii character file path sign error
-    * binary content upload/download not working
 
 ## Todo
 
 upyun.com provides two auth methods: HTTP Basic Auth and Sign Auth. For the time being, node-upyun supports Sign Auth only.
 
     * fix chinese file path issue
-    * fix binary upload/download issue
     * support HTTP Basic Auth
 
 ## LICENSE

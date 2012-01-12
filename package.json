@@ -1,7 +1,7 @@
 {
   "name": "upyun",
   "description": "Node.js module for upyun.com REST APIs.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "James Chen <ashchan@gmail.com> (http://ashchan.com/)",
   "homepage": "https://github.com/ashchan/node-upyun",
   "contributors": [
