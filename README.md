@@ -58,7 +58,9 @@ It's certainly possible to upload from a buffer:
 ### Download a file (get file content)
 
     client.downloadFile("docs/readme.txt", function(err, status, data) {
-      // data fetched as file content
+      // data fetched as file content, to save to a local file:
+      var buffer = new Buffer(data, "binary");
+      fs.writeFile("/path/to/readme.txt", buffer, "binary", function(err) {});
     });
 
 ### Delete a file
