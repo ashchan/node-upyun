@@ -86,17 +86,23 @@ To list files under root (bucket), pass null in as the first parameter:
       console.log("bucket space used: " + data);
     });
 
-## Run Tests
+## Run tests
 
     BUCKET=yourtestbucket USER=yourusername PASSWORD=yourpassword npm test
 
 yourtestbucket should exist. It's better to create a test only bucket for this.
+
+## Known issues
+
+    * none-ascii character file path sign error
+    * binary content upload/download not working
 
 ## Todo
 
 upyun.com provides two auth methods: HTTP Basic Auth and Sign Auth. For the time being, node-upyun supports Sign Auth only.
 
     * fix chinese file path issue
+    * fix binary upload/download issue
     * support HTTP Basic Auth
 
 ## LICENSE
