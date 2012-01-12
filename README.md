@@ -110,7 +110,9 @@ upyun.com provides two auth methods: HTTP Basic Auth and Sign Auth. For the time
     * fix chinese file path issue
     * support HTTP Basic Auth
 
-<h2 id="license">LICENSE</h2>
+<a name="license"/>
+
+##LICENSE
 
 (The MIT License)
 
