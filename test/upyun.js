@@ -26,6 +26,14 @@ test("upload a file", function(t) {
   });
 });
 
+test("upload a file with buffer", function(t) {
+  t.plan(1);
+  var buffer = new Buffer("test uploading " + ts, "binary");
+  client.uploadFile("test.txt", buffer, function(err, status, data) {
+    t.equal(status, 200, "file (with buffer) should be uploaded");
+  });
+});
+
 test("download a file", function(t) {
   t.plan(2);
   client.downloadFile("test.txt", function(err, status, data) {

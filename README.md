@@ -50,6 +50,11 @@ or simply upload the file, with the folder created automatically:
 
     client.uploadFile("docs/readme.txt", "gently down the stream", function(err, status, data){});
 
+It's certainly possible to upload from a buffer:
+
+    var buffer = new Buffer("fill me", "binary");
+    client.uploadFile("test.txt", buffer, function(err, status, data) {});
+
 ### Download a file (get file content)
 
     client.downloadFile("docs/readme.txt", function(err, status, data) {
@@ -90,7 +95,7 @@ To list files under root (bucket), pass null in as the first parameter:
 
     BUCKET=yourtestbucket USER=yourusername PASSWORD=yourpassword npm test
 
-yourtestbucket should exist. It's better to create a test only bucket for this.
+NOTE: yourtestbucket should exist and be empty. It's better to create a test only bucket for this.
 
 ## Known Issues
 
