@@ -86,13 +86,13 @@ To list files under root (bucket), pass null in as the first parameter:
       console.log("bucket space used: " + data);
     });
 
-## Run tests
+## Run Tests
 
     BUCKET=yourtestbucket USER=yourusername PASSWORD=yourpassword npm test
 
 yourtestbucket should exist. It's better to create a test only bucket for this.
 
-## Known issues
+## Known Issues
 
     * none-ascii character file path sign error
     * binary content upload/download not working
