@@ -37,6 +37,8 @@ All the available endpoints are:
     upyun.endpoint.ENDPOINT_V2;
     upyun.endpoint.ENDPOINT_V3;
 
+Note: check status on each API's callback, if it's not 200 then the API call is not successful (even if err is null).
+
 ### Create folder &amp; upload file
 
     client.createFolder("tmp", function(err, status, data) {
