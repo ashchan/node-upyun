@@ -81,6 +81,12 @@ If the folder is not empty, the deletion will fail; in this case status will be 
       console.log(data);
     });
 
+### Check if a file exists on CDN (use this function when files count exceeded 10000)
+
+    client.checkFileExistence("test.txt", function(err, isExist) {
+      console.log("is exists:"+isExist);
+    });
+
 Raw data from api is returned. In the future this will be parsed and returned as object (JSON?) for easier use.
 
 To list files under root (bucket), pass null in as the first parameter:
