@@ -81,7 +81,9 @@ If the folder is not empty, the deletion will fail; in this case status will be 
       console.log(data);
     });
 
-### Check if a file exists on CDN (use this function when files count exceeded 10000)
+### Check if a file exists on CDN
+
+Upyun limits file listing to 10000 entries at most, so use this function when files count exceeded.
 
     client.checkFileExistence("test.txt", function(err, isExist) {
       console.log("is exists:"+isExist);
