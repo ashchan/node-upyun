@@ -42,6 +42,20 @@ test("download a file", function(t) {
   });
 });
 
+test("a file exists on server", function(t) {
+  t.plan(1);
+  client.checkFileExistence("test.txt", function(err, isExist) {
+    t.equal(isExist, true, "existence validated");
+  });
+});
+
+test("a file NOT exists on server", function(t) {
+  t.plan(1);
+  client.checkFileExistence("non_exist_file.txt", function(err, isExist) {
+    t.equal(isExist, false, "non-existence validated");
+  });
+});
+
 test("delete a file", function(t) {
   t.plan(1);
   client.deleteFile("test.txt", function(err, status, data) {
