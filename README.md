@@ -1,3 +1,7 @@
+# Notice
+
+No longer maintained. Please use the official sdk from [upyun/node-sdk](https://github.com/upyun/node-sdk).
+
 Node.js module for upyun.com ([又拍云存储](https://www.upyun.com/)) REST APIs.
 
 ## APIs Coverage
